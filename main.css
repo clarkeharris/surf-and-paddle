@@ -9,24 +9,42 @@ body {
           box-sizing: border-box;
 }
 
-.logo span {
+.logo {
+	width: 100%;
+	height: 50px;
+}
+/**
+.logo-img {
+		background: url(images/S-and-P-logo.png) no-repeat;
+		height: 100px;
+}
+**/
+.logo span a {
 	float: left;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.1pxem;
+	font-size: 1.1em;
 	font-weight: 300;
 	color: #083452;
-	padding-top: 18px;
+	margin-left: 50px;
+	padding-top: 20px;
 	
+}
+
+.logo a {
+	text-decoration: none;
+	color: #083452;
+
 }
 
 h1 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 6.5em;
+	font-size: 6.4em;
 	font-weight: 400;
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
-	line-height: 108px;
+	line-height: 105px;
+	text-shadow: 1px 1px 0.5px #10598e;
 }
 
 h2 {
@@ -47,7 +65,7 @@ h3 {
 	letter-spacing: .5px;
 	line-height: 0;
 	text-transform: uppercase;
-	color: #0066cc;
+	color: #1374bc;
 	margin: 0;
 	padding: 0;
 }
@@ -57,32 +75,37 @@ p {
 	font-size: 1em;
 	font-weight: 400;
 	color: #666666;
-	line-height: 1.7em;
-	margin-bottom: 30px;
+	line-height: 1.65em;
+	margin-bottom: 26px;
 
 }
 p a {
 	color: #CCCCCC;
 }
-
+p a:hover {
+	color: #1374bc;
+}
 .p2 {
 	font-family: 'Asap', sans-serif;
 	font-size: 0.9em;
 	font-weight: 300;
 	color: #CCCCCC;
-	line-height: 1.7em;
+	line-height: 1.67em;
 	margin-top: 19px;
 }
 
 hr {
-	width: 100%;
-	margin: 38px 0 33px 0;
+	border: 0;
+	height: 1px;
+	background: #CCCCCC;
+	margin: 68px 0 35px 0;
+	
 }
 
 blockquote {
 	border-left: solid 2px #CCCCCC;
 	height: 55px;
-	margin: 25px 0px;
+	margin: 28px 0 21px 0px;
 	padding-top: 8px;
 	padding-left: 15px;
 
@@ -92,7 +115,7 @@ blockquote {
 	font-family: 'Asap', sans-serif;
 	font-size: 1.6em;
 	font-weight: 300;
-	color: #106db3;
+	color: #1374bc;
 	text-transform: uppercase;
 }
 header {
@@ -159,7 +182,7 @@ nav li {
 
 .center {
 	text-align: center;
-	margin-top: 205px;
+	margin-top: 157px;
 	padding: 0;
 }
 
@@ -181,9 +204,10 @@ nav li {
 	display: inline-block;
 	font-size: 0.8em;
 	margin-top: 10px;
-	margin-bottom: 14px;
+	margin-bottom: 12px;
 
 }
+
 
 .author-balance {
 	position: absolute;
@@ -197,21 +221,22 @@ nav li {
 .author-name2 {
 	font-family: 'Asap', sans-serif;
 	font-size: 1em;
-	color: #106db3;
+	color: #1374bc;
 }
 
 .date {
 	font-family: 'Asap', sans-serif;
-	color: #CCCCCC;
+	color: #a3b3bf;
+	padding-left: 10px;
 }
 
 .date a {
-	color: #CCCCCC;
+	color: #a3b3bf;
 }
 
 
 .social-boxes {
-	margin-top: -14px;
+	margin-top: -12px;
 }
 
 .social-icon {
@@ -225,7 +250,7 @@ nav li {
 .social-text {
 	float: left;
 	height: 30px;
-	padding: 6px 12px 10px 12px;
+	padding: 7px 12px 10px 12px;
 	background: #a3b3bf;
 	margin-right: 10px;
 	font-family: 'Asap', sans-serif;
@@ -245,7 +270,7 @@ nav li {
 .social-text-share {
 	float: left;
 	height: 30px;
-	padding: 6px 12px 10px 12px;
+	padding: 7px 12px 10px 12px;
 	background: #106db3;
 	margin-right: 10px;
 	font-family: 'Asap', sans-serif;
@@ -290,9 +315,18 @@ nav li {
 }
 
 .image-sidebar {
-
+	position: relative;
 	margin-top: 52px;
 	margin-bottom: 0;
+
+}
+
+.image-sidebar-overlay {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: rgba(17, 117, 192, 0.8);
+	height: 300px;
 }
 
 .right-sidebar-ad-link a {
@@ -302,11 +336,16 @@ nav li {
 	font-size: 0.9em;
 	padding-bottom: 1px;
 	color: #a3b3bf;
+	line-height: 10px;
 }
 
 .sidebar-paragraph {
 	display: block;
 	margin-top: 82px;
+}
+
+.sidebar-paragraph a {
+	color: #CCCCCC;
 }
 
 .popular-posts {
@@ -340,6 +379,7 @@ nav li {
 .box-overlay {
 	background: rgba(17, 117, 192, 0.8);
 	height: 330px;
+	color: #083452;
 	-webkit-transition: background-color 175ms ease-out 175ms;
     -moz-transition: background-color 175ms ease-out 175ms;
     -o-transition: background-color 175ms ease-out 175ms;
@@ -347,7 +387,7 @@ nav li {
 }
 .box:hover div {
 	background: none;
-	color: white;
+	color: #FFFFFF;
 }
 
 .box span {
@@ -357,11 +397,55 @@ nav li {
 	font-family: 'Oswald', sans-serif;
 	font-size: 2em;
 	text-transform: uppercase;
+	text-align: left;
+
 }
 
-.footer {
+footer {
 	width: 100%;
-	height: 100px;
+	height: 97px;
 	background-color: #083452;
-	position: absolute;
+	position: relative;
+	clear: left;
+}
+
+.footer-contents {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 40px;
+
+}
+footer p {
+
+	display: inline;
+	font-family: 'asap', sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #a3b3bf;
+	margin: 0;
+	line-height: 0;
+}
+
+.footer-contents ul li {
+	text-decoration: none;
+	display: inline;
+	font-family: 'Asap', sans-serif;
+	font-size: 0.9em;
+	margin-left: 8px;
+	padding-right: 8px;
+	border-right: 1px solid #a3b3bf;
+}
+
+.footer-contents a {
+	text-decoration: none;
+	color: #a3b3bf;
+}
+
+.footer-contents ul {
+	float: right;
+	margin: 0;
+}
+
+.footer-contents li {
+	float: left;
 }
