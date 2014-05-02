@@ -11,7 +11,7 @@ body {
 
 .logo span {
 	float: left;
-	font-family: 'Asap', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.1pxem;
 	font-weight: 300;
 	color: #083452;
@@ -20,12 +20,13 @@ body {
 }
 
 h1 {
-	font-family: 'Asap', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 6.5em;
 	font-weight: 400;
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
+	line-height: 108px;
 }
 
 h2 {
@@ -41,11 +42,14 @@ h2 {
 
 h3 {
 	font-family: 'Oswald', 'sans-serif';
-	font-size: 1em;
+	font-size: 1.1em;
+	font-weight: 400;
 	letter-spacing: .5px;
+	line-height: 0;
 	text-transform: uppercase;
 	color: #0066cc;
 	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -53,8 +57,9 @@ p {
 	font-size: 1em;
 	font-weight: 400;
 	color: #666666;
-	line-height: 1.6em;
-	margin: 25px;
+	line-height: 1.7em;
+	margin-bottom: 30px;
+
 }
 p a {
 	color: #CCCCCC;
@@ -62,15 +67,16 @@ p a {
 
 .p2 {
 	font-family: 'Asap', sans-serif;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-weight: 300;
 	color: #CCCCCC;
-	line-height: 1.8em;
+	line-height: 1.7em;
+	margin-top: 19px;
 }
 
 hr {
 	width: 100%;
-	margin: 68px 0 33px 0;
+	margin: 38px 0 33px 0;
 }
 
 blockquote {
@@ -107,7 +113,7 @@ header {
 
 .subtitle {
 	display: inline-block;
-	font-family: 'Asap', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.9em;
 	font-weight: 600;
 	color: #083452;
@@ -117,7 +123,7 @@ header {
 .top {
 	width: 960px;
 	margin: 0 auto;
-	padding-top: 1px;
+	padding-top: 0px;
 }
 
 .top nav ul li {
@@ -153,13 +159,14 @@ nav li {
 
 .center {
 	text-align: center;
-	margin-top: 189px;
+	margin-top: 205px;
 	padding: 0;
 }
 
 .content {
 	max-width: 960px;
 	margin: 0 auto;
+	min-height: 100%;
 }
 
 .main-column {
@@ -173,8 +180,8 @@ nav li {
 	position: relative;
 	display: inline-block;
 	font-size: 0.8em;
-	margin-top: 6px;
-	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 14px;
 
 }
 
@@ -184,12 +191,12 @@ nav li {
 	left: 25px;
 	width:400px;	
 	padding: 4px;
-	margin-bottom: 10px;
 	display: inline-block;
 }
 
 .author-name2 {
 	font-family: 'Asap', sans-serif;
+	font-size: 1em;
 	color: #106db3;
 }
 
@@ -204,6 +211,7 @@ nav li {
 
 
 .social-boxes {
+	margin-top: -14px;
 }
 
 .social-icon {
@@ -250,27 +258,22 @@ nav li {
 	float: right;
 	color: #0066cc;
 	max-width: 280px;
-	margin-top: 81px;
+	margin-top: 82px;
 	margin-bottom: 15px;
 }
 
 .author-name {
 	text-align: center;
-	margin-top: 15px;
 	font-family: 'Asap', sans-serif;
 	font-size: 1em;
 	font-weight: 300;
 	color: #106db3;
 	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 1px;
 }
 
-.right-sidebar img {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 10px;	
-}
-
-.right-sidebar a {
+.sidebar-social-links a {
 	display: inline;
 	text-decoration: none;
 	font-family: 'Asap', sans-serif;
@@ -280,22 +283,30 @@ nav li {
 	margin-left: 25px;
 }
 
+.right-sidebar img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;	
+}
+
 .image-sidebar {
 
-	margin-top: 55px;
+	margin-top: 52px;
 	margin-bottom: 0;
 }
 
-.right-sidebar-ad-link {
+.right-sidebar-ad-link a {
 	float: right;
 	color: #CCCCCC;
 	font-family: 'Asap', sans-serif;
-	font-size: 1em;
-
+	font-size: 0.9em;
+	padding-bottom: 1px;
+	color: #a3b3bf;
 }
+
 .sidebar-paragraph {
 	display: block;
-	margin-top: 50px;
+	margin-top: 82px;
 }
 
 .popular-posts {
@@ -309,25 +320,48 @@ nav li {
 	height: 330px;
 	margin-top: 40px;
 	position: relative;
-	background: rgba(17, 117, 192, 0.8);
 }
 
-.box:hover {
+.box1{
+	background-image: url(images/sand.jpg);
+}
+
+.box2 {
+	background-image: url(images/dock.jpg);
+}
+
+.box3 {
+	background-image: url(images/oceanboat.jpg);
+}
+
+.box4 {
+	background-image: url(images/boat.jpg);
+}
+.box-overlay {
+	background: rgba(17, 117, 192, 0.8);
+	height: 330px;
+	-webkit-transition: background-color 175ms ease-out 175ms;
+    -moz-transition: background-color 175ms ease-out 175ms;
+    -o-transition: background-color 175ms ease-out 175ms;
+    transition: background-color 175ms ease-out 175ms;
+}
+.box:hover div {
 	background: none;
+	color: white;
 }
 
 .box span {
 	position: absolute;
 	bottom: 15px;
 	left: 15px;
-	font-family: 'Asap', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 2em;
 	text-transform: uppercase;
 }
 
-footer {
-	display: block;
+.footer {
 	width: 100%;
 	height: 100px;
 	background-color: #083452;
+	position: absolute;
 }
